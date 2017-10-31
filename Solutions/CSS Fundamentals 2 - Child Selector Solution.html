@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS selectors</title>
+  </head>
+  <body>
+    <!-- 
+    Target the span element 
+    as a direct child of the paragraph
+    and set its background color to orange.
+    The other spans will have a background color of silver
+     -->
+      
+    <style>
+    
+      p > span {
+        background-color: orange;
+      }
+      
+      span {
+        background-color: silver;
+      }
+      
+    </style>
+
+    <p>
+      I am a paragraph with 
+      <span>a direct child</span>
+    </p>
+    <p>
+      I am another paragraph with 
+      <span>a direct child</span>
+    </p>
+    <div><span>I'm a span</span></div>
+    <div><span>I'm a span too</span> </div>
+  </body>
+</html>
