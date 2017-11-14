@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Static elements</title>
+
+    <!-- All elements are positioned static by default
+    which means they sit on top of each other  -->
+
+    <style>
+      div {
+        width:  100px;
+        height: 100px;
+        margin: 10px;
+      }
+      .one {
+        background-color: #000;
+      }      
+
+	/* This box has visibility: hidden and so does
+	 not affect the flow of the page - leaving a
+	  gap where the div should be */
+
+      .two {
+        background-color: #bada55;
+        visibility: hidden;
+      }
+
+	/* This box has display: none and therefore 
+	 removes the div from the page altogether */
+
+      .three {
+        background-color:  #0ff;
+        display: none;
+      }    
+
+      .four {
+        background-color:  #0063B1;
+      }    
+
+    </style>
+  </head>
+  <body>
+
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+  </body>
+</html>

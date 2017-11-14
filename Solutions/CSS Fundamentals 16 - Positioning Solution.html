@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS 16 Positioning Solution</title>
+
+  <!-- How can we put blue box inside the container
+  so it would be in the top left corner of the container?
+  HINT: You need only add a position property and its appropriate value to container. -->
+
+  <style>
+
+    .container {
+      background-color: #e84610;
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    .inner {
+      width: 200px;
+      height: 200px;
+      background-color: #0799d3;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="inner"></div>
+  </div>
+</body>
+</html>

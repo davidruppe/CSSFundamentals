@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS 17 Z-Axis Solution</title>
+
+  <!-- We want to see box2 above the box1. Currently
+  blue box is on top of the red one. But we want to reverse it. 
+  How can we do that?-->
+  
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    #box1 {
+      /* red */
+      background-color: #e84610;
+      z-index: 1;
+    }
+    
+    #box2 {
+      /* blue */
+      background-color: #0799d3;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="box1"></div>
+  <div id="box2"></div>
+</body>
+</html>
